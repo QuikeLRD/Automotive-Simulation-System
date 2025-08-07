@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity head_lights is
+    port (
+       
+        
+        
+    );
+end head_lights;
+
+architecture Behavioral of blind_spot_sensors is
+begin
+--------------------------------------------------------------------------------    
+process(ir_left, ir_right,car_on)
+begin
+			
+		if (ir_left <= '0' or ir_right <= '0') and car_on <='1' then 
+			
+			led_sensor <= '1';
+			else
+			led_sensor <= '0';
+			
+		end if;
+end process;
+	
+	     
+end Behavioral;

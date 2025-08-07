@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.858
+TNS   : -407.832
+
+Type  : Slow 1200mV 85C Model Setup 'ignition:ignition_inst|pulse'
+Slack : -0.420
+TNS   : -1.078
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ignition:ignition_inst|pulse'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -246.868
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ignition:ignition_inst|pulse'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.554
+TNS   : -366.846
+
+Type  : Slow 1200mV 0C Model Setup 'ignition:ignition_inst|pulse'
+Slack : -0.308
+TNS   : -0.702
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ignition:ignition_inst|pulse'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -246.868
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ignition:ignition_inst|pulse'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.516
+TNS   : -90.525
+
+Type  : Fast 1200mV 0C Model Setup 'ignition:ignition_inst|pulse'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ignition:ignition_inst|pulse'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -177.723
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ignition:ignition_inst|pulse'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

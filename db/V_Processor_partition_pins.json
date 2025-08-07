@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "buzzer",
+					"strict" : false
+				},
+				{
+					"name" : "ignition_on",
+					"strict" : false
+				},
+				{
+					"name" : "led_red",
+					"strict" : false
+				},
+				{
+					"name" : "cabin_lights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "cabin_lights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "trunk_lights",
+					"strict" : false
+				},
+				{
+					"name" : "hazard_left",
+					"strict" : false
+				},
+				{
+					"name" : "hazard_right",
+					"strict" : false
+				},
+				{
+					"name" : "led_sensor_blind",
+					"strict" : false
+				},
+				{
+					"name" : "left_led",
+					"strict" : false
+				},
+				{
+					"name" : "right_led",
+					"strict" : false
+				},
+				{
+					"name" : "quarter_lights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "quarter_lights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "normal_lights[0]",
+					"strict" : false
+				},
+				{
+					"name" : "normal_lights[1]",
+					"strict" : false
+				},
+				{
+					"name" : "high_beam[0]",
+					"strict" : false
+				},
+				{
+					"name" : "high_beam[1]",
+					"strict" : false
+				},
+				{
+					"name" : "headlight_led",
+					"strict" : false
+				},
+				{
+					"name" : "buzzer_alert",
+					"strict" : false
+				},
+				{
+					"name" : "pwm_out",
+					"strict" : false
+				},
+				{
+					"name" : "error_humity",
+					"strict" : false
+				},
+				{
+					"name" : "fin",
+					"strict" : false
+				},
+				{
+					"name" : "data",
+					"strict" : false
+				},
+				{
+					"name" : "start_button",
+					"strict" : false
+				},
+				{
+					"name" : "seatbelt",
+					"strict" : false
+				},
+				{
+					"name" : "ldr_door",
+					"strict" : false
+				},
+				{
+					"name" : "door_pilot",
+					"strict" : false
+				},
+				{
+					"name" : "door_copilot",
+					"strict" : false
+				},
+				{
+					"name" : "door_trunk",
+					"strict" : false
+				},
+				{
+					"name" : "flash_button",
+					"strict" : false
+				},
+				{
+					"name" : "ir_left",
+					"strict" : false
+				},
+				{
+					"name" : "ir_right",
+					"strict" : false
+				},
+				{
+					"name" : "direction_switchL",
+					"strict" : false
+				},
+				{
+					"name" : "direction_switchR",
+					"strict" : false
+				},
+				{
+					"name" : "headlight_switch",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[5]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[6]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[7]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "adc_value[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "enable_humity",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

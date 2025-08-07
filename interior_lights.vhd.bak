@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity interior_lights is
+    port (
+           
+	 
+		  door_pilot    : in  STD_LOGIC;  -- Señal que indica si la puerta del piloto está abierta
+        door_copilot  : in  STD_LOGIC;  -- Señal que indica si la puerta del copiloto está abierta
+        door_trunk    : in  STD_LOGIC;  -- Señal que indica si la cajuela está abierta
+        ldr_door      : in  STD_LOGIC;  -- Señal del sensor de luz para la cabina
+        lights_cabin  : out STD_LOGIC_vector(1 downto 0);  -- Estado de las luces interiores (1 = encendidas)
+        lights_trunk  : out STD_LOGIC   -- Estado de las luces de la cajuela (1 = encendidas)
+		  
+		  );

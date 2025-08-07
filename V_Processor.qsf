@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2024  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+# Date created = 23:26:56  January 08, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		V_Processor_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY V_Processor
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 23.1STD.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:26:56  JANUARY 08, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_FILE V_Processor.vhd
+set_global_assignment -name VHDL_FILE ignition.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_68 -to buzzer
+set_location_assignment PIN_23 -to clk
+set_location_assignment PIN_66 -to ignition_on
+set_location_assignment PIN_64 -to led_red
+set_location_assignment PIN_25 -to reset
+set_location_assignment PIN_89 -to seatbelt
+set_location_assignment PIN_88 -to start_button
+set_global_assignment -name VHDL_FILE interior_lights.vhd
+set_location_assignment PIN_76 -to cabin_lights[0]
+set_location_assignment PIN_44 -to cabin_lights[1]
+set_location_assignment PIN_28 -to door_copilot
+set_location_assignment PIN_80 -to door_pilot
+set_location_assignment PIN_55 -to door_trunk
+set_location_assignment PIN_59 -to ldr_door
+set_location_assignment PIN_74 -to trunk_lights
+set_global_assignment -name VHDL_FILE hazard_lights.vhd
+set_location_assignment PIN_90 -to flash_button
+set_location_assignment PIN_31 -to hazard_left
+set_location_assignment PIN_72 -to hazard_right
+set_global_assignment -name VHDL_FILE blind_spot_sensors.vhd
+set_location_assignment PIN_69 -to led_sensor_blind
+set_location_assignment PIN_83 -to ir_left
+set_location_assignment PIN_43 -to ir_right
+set_global_assignment -name VHDL_FILE direction_lights.vhd
+set_location_assignment PIN_42 -to right_led
+set_location_assignment PIN_77 -to left_led
+set_location_assignment PIN_32 -to direction_switchL
+set_location_assignment PIN_34 -to direction_switchR
+set_global_assignment -name VHDL_FILE head_lights.vhd
+set_location_assignment PIN_91 -to headlight_switch
+set_location_assignment PIN_71 -to high_beam[0]
+set_location_assignment PIN_73 -to normal_lights[0]
+set_location_assignment PIN_75 -to quarter_lights[0]
+set_location_assignment PIN_39 -to quarter_lights[1]
+set_location_assignment PIN_38 -to normal_lights[1]
+set_location_assignment PIN_33 -to high_beam[1]
+set_location_assignment PIN_87 -to headlight_led
+set_location_assignment PIN_110 -to buzzer_alert
+set_location_assignment PIN_120 -to adc_value[0]
+set_location_assignment PIN_124 -to adc_value[1]
+set_location_assignment PIN_126 -to adc_value[2]
+set_location_assignment PIN_128 -to adc_value[3]
+set_location_assignment PIN_132 -to adc_value[4]
+set_location_assignment PIN_135 -to adc_value[5]
+set_location_assignment PIN_137 -to adc_value[6]
+set_location_assignment PIN_141 -to adc_value[7]
+set_global_assignment -name VHDL_FILE LIBRERIA_DHT11_REVA.vhd
+set_global_assignment -name VHDL_FILE Data_Processor.vhd
+set_global_assignment -name VHDL_FILE PWM_Controller.vhd
+set_location_assignment PIN_60 -to enable_humity
+set_location_assignment PIN_86 -to error_humity
+set_location_assignment PIN_85 -to fin
+set_location_assignment PIN_58 -to data
+set_location_assignment PIN_65 -to pwm_out
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

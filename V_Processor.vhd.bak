@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+
+entity Processor_V is
+port(
+		  clk              : in  std_logic; -- Reloj principal
+        reset            : in  std_logic; -- Reset global
+        start_button     : in  std_logic; -- Botón de encendido
+        seatbelt         : in  std_logic; -- Señal del cinturón
+        buzzer           : out std_logic; -- Buzer de alarma
+        ignition_led     : out std_logic; -- LED de ignición 
+        led_red          : out STD_LOGIC;  -- LED de alerta
+);
+
+end Processor_V;
+
+architecture Behavioral of Processor_V is
+
+component ignition    
+port(
+        clk           : in  STD_LOGIC;   -- Reloj
+        reset         : in  STD_LOGIC;   -- Reset del sistema
+        start_button  : in  STD_LOGIC;   -- interruptor de encendido/apagado
+        seatbelt      : in  STD_LOGIC;   -- Estado del cinturón (1 = abrochado)
+        ignition_on   : out STD_LOGIC;   -- Salida que indica que el led está encendido
+        buzzer        : out STD_LOGIC;   -- Buzzer para alerta de cinturón
+        led_red       : out STD_LOGIC    -- LED rojo para alerta de cinturón
+    );
+end component;

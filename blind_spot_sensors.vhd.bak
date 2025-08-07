@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity blind_spot_sensors is
+    port (
+        clk           : in  STD_LOGIC;  -- Reloj principal del sistema
+        reset         : in  STD_LOGIC;  -- Señal de reinicio
+        ignition_on   : in  STD_LOGIC;  -- Estado del automóvil (1 = encendido)
+        ir_left       : in  STD_LOGIC;  -- Sensor IR izquierdo (1 = detecta objeto)
+        ir_right      : in  STD_LOGIC;  -- Sensor IR derecho (1 = detecta objeto)
+        led_sensor    : out STD_LOGIC  -- LED indicador para punto ciego izquierdo
+        
+    );
+end blind_spot_sensors;
+
+architecture Behavioral of blind_spot_sensors is
+begin
+    -- Control del LED izquierdo
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            led_sensor <= '0'; -- Apagar LED en reinicio
+        elsif rising_edge(clk) then
+            if ignition_on = '1' and (ir_left = '1' or ir_right = '1') then
+                led_sensor <= '1'; -- Encender LED si el automóvil está encendido y el sensor detecta algo
+            else
+                led_sensor <= '0'; -- Apagar LED
+            end if;
+        end if;
+    end process;
+
+    
+end Behavioral;

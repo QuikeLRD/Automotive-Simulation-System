@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity hazard_lights is
+    port (
+        
+		  flash_button  : in  STD_LOGIC;		--Interruptor de luces intermitentes
+		  hazard_left   : out STD_LOGIC;    --Luz intermitente izquierda
+		  hazard_right  : out STD_LOGIC;    --Luz intermitente derecha

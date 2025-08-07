@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jan 13 21:21:05 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : V_Processor
+Top-level Entity Name : V_Processor
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 297 / 6,272 ( 5 % )
+    Total combinational functions : 270 / 6,272 ( 4 % )
+    Dedicated logic registers : 168 / 6,272 ( 3 % )
+Total registers : 168
+Total pins : 46 / 92 ( 50 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

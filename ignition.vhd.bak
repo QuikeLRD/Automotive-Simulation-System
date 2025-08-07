@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ignition is
+    port (
+        clk           : in  STD_LOGIC;   -- Reloj
+        reset         : in  STD_LOGIC;   -- Reset del sistema
+        start_button  : in  STD_LOGIC;   -- interruptor de encendido/apagado
+        seatbelt      : in  STD_LOGIC;   -- Estado del cinturón (1 = abrochado)
+        ignition_on   : out STD_LOGIC;   -- Salida que indica que el led está encendido
+        buzzer        : out STD_LOGIC;   -- Buzzer para alerta de cinturón
+        led_red       : out STD_LOGIC;    -- LED rojo para alerta de cinturón
+		  
+	);		
+	 	 
+end ignition;
+
+architecture Behavioral of ignition_prueba is
+
+	 signal cont3s : integer range 0 to 4 := 0;
+	 signal bandera: STD_LOGIC := '0';
+	 
+	 
+		
+	 SIGNAL counter : INTEGER range 0 to 99000000:= 0;           --COUNTER FOR SIGNAL NEW CLK
+    SIGNAL clk1    : STD_LOGIC;
+    SIGNAL pulse   : STD_LOGIC := '0'; 
+begin	
